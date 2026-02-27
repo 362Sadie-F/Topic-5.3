@@ -6,6 +6,14 @@
         {
             double money;
             string work;
+            string password;
+            int guessNum;
+
+            //CopyPaste:
+            // Console.WriteLine();
+            // Console.WriteLine("Press ENTER to continue");
+            // Console.ReadLine();
+            // Console.Clear();
 
             //task 1
             Console.WriteLine("You want to go to the movies? Are you working?");
@@ -36,6 +44,25 @@
             Console.Clear();
 
             //task 2
+            Console.Write("Please enter your password: ");
+            password = Console.ReadLine();
+            if (password == "EPIC")
+            {
+                Console.WriteLine("Correct! Welcome!");
+            }
+            else
+            {
+                Console.WriteLine("Incorrect! Please try again (guess: 1)");
+                password = Console.ReadLine();
+                if (password == "EPIC")
+                {
+                    Console.WriteLine("Correct! Welcome!");
+                }
+                else
+                {
+                    Console.WriteLine("Incorrect! Please try again (guess: 2)");
+                }
+            }
 
         }
     }
