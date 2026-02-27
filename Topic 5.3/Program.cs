@@ -52,7 +52,11 @@
             }
             else
             {
-                Console.WriteLine("Incorrect! Please try again (guess: 1)");
+                Console.WriteLine("Incorrect! Please try again.");
+                Console.WriteLine("Guess: 1. \t Press ENTER to continue.");
+                Console.ReadLine();
+                Console.Clear();
+                Console.Write("Please enter your password: ");
                 password = Console.ReadLine();
                 if (password == "EPIC")
                 {
@@ -60,10 +64,62 @@
                 }
                 else
                 {
-                    Console.WriteLine("Incorrect! Please try again (guess: 2)");
+                    Console.WriteLine("Incorrect! Please try again.");
+                    Console.WriteLine("Guess: 2. \t Press ENTER to continue.");
+                    Console.ReadLine();
+                    Console.Clear();
+                    Console.Write("Please enter your password: ");
+                    password = Console.ReadLine();
+                    if (password == "EPIC")
+                    {
+                        Console.WriteLine("Correct! Welcome!");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Incorrect! Please try again.");
+                        Console.WriteLine("Guess: 3. \t Press ENTER to continue.");
+                        Console.ReadLine();
+                        Console.Clear();
+                        Console.Write("Please enter your password: ");
+                        password = Console.ReadLine();
+                        if (password == "EPIC")
+                        {
+                            Console.WriteLine("Correct! Welcome!");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Incorrect! Please try again.");
+                            Console.WriteLine("Guess: 4. \t Press ENTER to continue.");
+                            Console.ReadLine();
+                            Console.Clear();
+                            Console.Write("Please enter your password: ");
+                            password = Console.ReadLine();
+                            if (password == "EPIC")
+                            {
+                                Console.WriteLine("Correct! Welcome!");
+                            }
+                            else
+                            {
+                                Console.WriteLine("Incorrect! Please try again.");
+                                Console.WriteLine("Guess: 5. \t Press ENTER to continue.");
+                                Console.ReadLine();
+                                Console.Clear();
+                                Console.Write("Please enter your password: ");
+                                password = Console.ReadLine();
+                                if (password == "EPIC")
+                                {
+                                    Console.WriteLine("Correct! Welcome!");
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Incorrect! You're out of guesses. Please try again later.");
+                                }
+                            }
+                        }
+
+                    }
                 }
             }
-
         }
     }
 }
