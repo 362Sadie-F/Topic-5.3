@@ -5,9 +5,11 @@
         static void Main(string[] args)
         {
             double money;
+            double temp;
             string work;
             string password;
             string favAnimal;
+            string weather;
             int guessNum;
             int age;
 
@@ -147,7 +149,7 @@
             favAnimal = Console.ReadLine();
             if (favAnimal == "cat" || favAnimal == "Cat" || favAnimal == "CAT")
             {
-                Console.WriteLine("Cool! I have a cat name Yvette!");
+                Console.WriteLine("Me too! I have a cat name Yvette!");
             }
             else if (favAnimal == "Dog" || favAnimal == "dog" || favAnimal == "DOG")
             {
@@ -157,7 +159,34 @@
             {
                 Console.WriteLine("To each their own.");
             }
+            Console.WriteLine("\t Press ENTER to continue.");
+            Console.ReadLine();
+            Console.Clear();
 
+            //task 3
+            Console.WriteLine("Want to know if you should go swimming? Enter the tempurature in celcius and the weather down below!");
+            temp = Convert.ToDouble(Console.ReadLine());
+            weather = Console.ReadLine();
+            if (weather == "Sunny" || temp >= 25)
+            {
+                Console.WriteLine("Perfect swimming weather outside!");
+            }
+            else
+            {
+                Console.WriteLine("Yikes- best stay inside and nap this time!");
+            }
+                Console.WriteLine("\t Press ENTER to continue.");
+            Console.ReadLine();
+            Console.Clear();
+
+            //task 4
+            Console.WriteLine();
+
+
+
+            Console.WriteLine("\t Press ENTER to continue.");
+            Console.ReadLine();
+            Console.Clear();
 
         }
     }
