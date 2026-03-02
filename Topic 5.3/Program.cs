@@ -172,7 +172,7 @@
             weather = Console.ReadLine();
             if (weather == "Sunny" || temp >= 25)
             {
-                Console.WriteLine("Perfect swimming weather outside!");
+                Console.WriteLine("Swim time!");
             }
             else
             {
