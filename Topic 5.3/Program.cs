@@ -7,7 +7,9 @@
             double money;
             string work;
             string password;
+            string favAnimal;
             int guessNum;
+            int age;
 
             //CopyPaste:
             // Console.WriteLine();
@@ -120,6 +122,43 @@
                     }
                 }
             }
+            Console.WriteLine("\t Press ENTER to continue.");
+            Console.ReadLine();
+            Console.Clear();
+
+            //task 1
+            Console.Write("To procced in you purchase of a bus ticket, please enter your age: ");
+           age = Convert.ToInt32(Console.ReadLine());
+            if (age <= 12 || age >= 60)
+            {
+                Console.WriteLine("The price of your ticket is $2.00");
+            }
+            else
+            {
+                Console.WriteLine("The price of your ticket is $3.50");
+            }
+            Console.WriteLine("\t Press ENTER to continue.");
+            Console.ReadLine();
+            Console.Clear();
+
+            //task 2
+            Console.WriteLine("What's your favorite animal?");
+            Console.Write("My favorite animal is: ");
+            favAnimal = Console.ReadLine();
+            if (favAnimal == "cat" || favAnimal == "Cat" || favAnimal == "CAT")
+            {
+                Console.WriteLine("Cool! I have a cat name Yvette!");
+            }
+            else if (favAnimal == "Dog" || favAnimal == "dog" || favAnimal == "DOG")
+            {
+                Console.WriteLine("I used to have a dog too- his name was Beau.");
+            }
+            else
+            {
+                Console.WriteLine("To each their own.");
+            }
+
+
         }
     }
 }
