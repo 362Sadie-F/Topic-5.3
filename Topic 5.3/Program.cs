@@ -12,6 +12,9 @@
             string weather;
             int guessNum;
             int age;
+            int person1;
+            int person2;
+            int person3;
 
             //CopyPaste:
             // Console.WriteLine();
@@ -180,14 +183,24 @@
             Console.Clear();
 
             //task 4
+            Console.Write("Please enter the age of person 1: ");
+            while (!Int32.TryParse(Console.ReadLine(), out person1))
+                Console.WriteLine("Please enter a valid age.");
+
             Console.WriteLine();
+            Console.Write("Please enter the age of person 2: ");
+            while (!Int32.TryParse(Console.ReadLine(), out person2))
+                Console.WriteLine("Please enter a valid age.");
 
-
+            Console.WriteLine();
+            Console.Write("Please enter the age of person 3: ");
+            while (!Int32.TryParse(Console.ReadLine(), out person3))
+                Console.WriteLine("Please enter a valid age.");
 
             Console.WriteLine("\t Press ENTER to continue.");
             Console.ReadLine();
             Console.Clear();
-
+            
         }
     }
 }
