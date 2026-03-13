@@ -150,11 +150,11 @@
             Console.WriteLine("What's your favorite animal?");
             Console.Write("My favorite animal is: ");
             favAnimal = Console.ReadLine();
-            if (favAnimal == "cat" || favAnimal == "Cat" || favAnimal == "CAT")
+            if (favAnimal.ToLower() == "cat")
             {
                 Console.WriteLine("Me too! I have a cat name Yvette!");
             }
-            else if (favAnimal == "Dog" || favAnimal == "dog" || favAnimal == "DOG")
+            else if (favAnimal.ToUpper() == "dog")
             {
                 Console.WriteLine("I used to have a dog too- his name was Beau.");
             }
@@ -170,7 +170,7 @@
             Console.WriteLine("Want to know if you should go swimming? Enter the tempurature in celcius and the weather down below!");
             temp = Convert.ToDouble(Console.ReadLine());
             weather = Console.ReadLine();
-            if (weather == "Sunny" || temp >= 25)
+            if (weather.ToUpper() == "sunny" && temp >= 25)
             {
                 Console.WriteLine("Swim time!");
             }
